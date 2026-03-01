@@ -1,0 +1,21 @@
+# Core ML — matches Colab 2026 stack exactly
+tensorflow==2.19.0
+numpy==1.26.4
+
+# Data & evaluation — matches Colab 2026 stack
+scikit-learn==1.6.1
+pandas==2.2.2
+
+# Image processing — versions with Python 3.12 wheels
+Pillow==10.4.0
+opencv-python==4.9.0.80
+
+# Visualization — versions with Python 3.12 wheels
+matplotlib==3.9.4
+seaborn==0.13.2
+
+# File format support
+h5py==3.12.1
+
+# Web app
+streamlit==1.43.2
