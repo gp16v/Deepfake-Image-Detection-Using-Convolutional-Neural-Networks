@@ -6,7 +6,7 @@
 # Folder structure:
 #  my_project/
 #  ├── app.py
-#  └── best_model.keras
+#  └── finetuned_final.keras
 # ============================================================
 
 import streamlit as st
@@ -17,8 +17,6 @@ import cv2
 import tempfile
 import os
 
-# ────────────────────────────────────────────────────────────
-# ⚠️  MUST match exactly what was used during training
 # ────────────────────────────────────────────────────────────
 IMAGE_SIZE = 224
 # ────────────────────────────────────────────────────────────
@@ -32,9 +30,9 @@ st.set_page_config(
 # ── Load CNN model ───────────────────────────────────────────
 @st.cache_resource
 def load_model():
-    model_path = "best_model.keras"
+    model_path = "finetuned_final.keras"
     if not os.path.exists(model_path):
-        st.error("❌ 'best_model.keras' not found. Put it in the same folder as app.py")
+        st.error("❌ 'finetuned_final.keras' not found. Put it in the same folder as app.py")
         st.stop()
     return tf.keras.models.load_model(model_path)
 
@@ -191,7 +189,7 @@ def run_detection_frame(bgr_frame):
 # ══════════════════════════════════════════════════════════════
 
 st.title("🔍 Deepfake Detection System")
-st.markdown("*CNN-based detection using InceptionResNetV2 · Accuracy: 99.87%*")
+st.markdown("*CNN-based detection using InceptionResNetV2 · Accuracy: 98.95%*")
 st.markdown("---")
 
 st.sidebar.header("ℹ️ About")
