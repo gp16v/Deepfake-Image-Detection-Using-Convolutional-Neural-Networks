@@ -147,3 +147,11 @@ This project is licensed under the MIT License.
 154	RAHUL M J
 151	NOEL REJI
 165	SATH SREE HARI K
+
+---
+
+## Pre-trained Model
+
+|           File          |   Size   |                                                   Link                                                           |
+|-------------------------|----------|------------------------------------------------------------------------------------------------------------------|
+| `finetuned_final.keras` | 632.9 MB | [Download from Google Drive](https://drive.google.com/file/d/1lOl_Tl0Y9KNJBLmjzeqbJUPLE0zKjs4Z/view?usp=sharing) |
